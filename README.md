@@ -30,3 +30,25 @@
   - export {default as movies} from './movies/movies'
 - now import that component whereever you want
   - import {movies, xyz, etc.} from '.'
+
+# makeStyle
+
+- npm install @mui/styles --legacy-peer-deps
+- import { makeStyles } from '@mui/styles';
+  export default makeStyles(() => {
+  return {
+  root: {
+  display: 'flex',
+  height: '100%',
+  },
+  toolbar: {
+  height: '70px',
+  },
+  content: {
+  flexGrow: 1,
+  padding: '2em',
+  },
+  };
+  });
+- import useStyles from './styles'; (import in component)
+- const classes = useStyles(); (use as a hook)
