@@ -22,3 +22,11 @@
 # CssBaseline
 
 - import {CssBaseline} from '@mui/material'
+
+# import/export components
+
+- create index.js file in components folder
+- in index js file export all components as default
+  - export {default as movies} from './movies/movies'
+- now import that component whereever you want
+  - import {movies, xyz, etc.} from '.'
