@@ -28,7 +28,7 @@
 - create index.js file in components folder
 - in index js file export all components as default
   - export {default as movies} from './movies/movies'
-- now import that component whereever you want
+- now import that component where-ever you want
   - import {movies, xyz, etc.} from '.'
 
 # makeStyle
